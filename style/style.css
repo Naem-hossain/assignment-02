@@ -1,0 +1,176 @@
+body{
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    background-color: #FFFFFF;
+}
+
+/* ------------
+header style 
+--------------- */
+.headar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 1321px;
+    height: 646px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+}
+.header-info{
+    width: 100%;
+    padding: 20px;
+}
+.header-title{
+    font-size: 70px;
+    font-weight: bold;
+}
+.header-btn{
+    background-color: #DD0000;
+    padding: 16px 25px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.header-img img{
+    position: absolute;
+    top: 93px;
+    Width: 581px;
+    Height: 613px;
+    margin-left: 30px;
+}
+
+/*-------------------------
+ main section aside style 
+--------------------------- */
+.cards-section{
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: 312px 1fr ;
+    gap: 20px;
+}
+.left-aside{
+    background-color: #161616;
+;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.aside-btn{
+    width: 252px;
+    height: 64px;
+    margin: 30px;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFFFF;
+   
+}
+.aside-btn > a{
+    text-decoration: none;
+    color: black;
+}
+.red {
+    background-color: red;
+}
+.red > a {
+    color: white;
+}
+.right-aside{
+
+}
+/* -------------
+all cards style 
+ ---------------*/
+ .right-aside{
+    width: 312px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+ }
+ .card{
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+ }
+.card > img{
+    width: 312px;
+    height: 175px;
+
+ }
+ .card-btn{
+    width: 100px;
+    height: 32px;
+    margin: 10px 10px;
+    color: black;
+    font-size: 18px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+ }
+ .card-title{
+    margin-left: 10px;
+ }
+ .card-logo{
+    display: flex;
+    align-items: center;
+    
+ }
+ .card-text{
+    margin-left: 10px;
+ }
+ .card-logo > img{
+    height: 18px;
+    width: 18px;
+    margin-left: 10px;
+    
+ }
+ /* ----------------
+ footer style
+ ------------------- */
+ footer{
+    width: 100%px;
+    height: 444px;
+    background-color: black;
+    text-align: center;
+ }
+ h2{
+    font-size: 40px;
+    line-height: 60px;
+    color: white;
+    position: relative;
+    padding-top: 130px;
+ }
+ .footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .footer-text{
+    color: white;
+    margin-left: 20px;
+ }
+ .icon{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 15px;
+    height: 15px;
+ }
+
+ 
