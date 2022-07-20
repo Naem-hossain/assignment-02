@@ -1,217 +1,319 @@
-body{
-    width: 90%;
-    margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
+/* for all body style  */
+body {
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
 }
-main{
-    background-color: #FFFFFF;
+
+main {
+  background-color: #ffffff;
 }
 
 /* ------------
 header style 
 --------------- */
-.headar-section{
-    margin-top: 20px;
-    width: 1300px;
-    height: 633px;
-    padding: 20px;
-    background-color: black;
-    border-radius: 30px;
-    color: white;
-}
-.header{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    align-items: center;
 
-}
-.header-info{
-    width: 100%;
-    padding: 20px;
-}
-.header-title{
-    font-size: 70px;
-    font-weight: bold;
-}
-.header-btn{
-    background-color: #DD0000;
-    padding: 16px 25px;
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
+.headar-section {
+  margin-top: 20px;
+  width: 1300px;
+  height: 633px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
 }
 
-.header-img img{
-    width: 100%;
-    Height: 653px;
-    padding-left: 30px;
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.header-info {
+  width: 100%;
+  padding: 20px;
+}
+.header-title {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.header-btn {
+  background-color: #dd0000;
+  padding: 16px 25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header-img img {
+  width: 100%;
+  height: 653px;
+  padding-left: 30px;
 }
 
 /*-------------------------
  main section aside style 
 --------------------------- */
-.cards-section{
-    margin-top: 65px;
-    display: grid;
-    grid-template-columns: 312px 1fr ;
-    gap: 20px;
+
+.cards-section {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 312px 1fr;
+  gap: 20px;
 }
-.left-aside{
-    background-color: #161616;
-    height: 312px;
+
+.left-aside {
+  background-color: #161616;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.aside-btn {
+  width: 252px;
+  height: 64px;
+  margin: 30px;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  background-color: #ffffff;
+}
+
+.aside-btn > a {
+  text-decoration: none;
+  color: black;
+}
+
+.red-btn {
+  background-color: red;
+  border: none;
+}
+
+.red-btn > a {
+  color: white;
+}
+
+/* -------------
+all cards style 
+ ---------------*/
+
+.right-aside {
+  width: 312px;
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px black;
+}
+
+.card > img {
+  width: 312px;
+  height: 175px;
+}
+
+.card-btn {
+  width: 100px;
+  height: 32px;
+  margin: 10px 10px;
+  color: black;
+  font-size: 18px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+
+.card-title {
+  margin-left: 10px;
+}
+
+.card-logo {
+  display: flex;
+  align-items: center;
+}
+
+.card-text {
+  margin-left: 10px;
+}
+
+.card-logo > img {
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+}
+
+/*------------------
+  tab-view-btn style 
+ ----------------------- */
+
+.tab-view-btn {
+  margin: 50px 0;
+  padding: 16px 29px;
+  width: 226px;
+  height: 84px;
+  border-radius: 10px;
+  background-color: #dd0000;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: none;
+  /* visibility: hidden; */
+}
+
+/* ----------------
+ footer style
+ ------------------- */
+
+footer {
+  width: auto;
+  height: 444px;
+  background-color: black;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 60px;
+  color: white;
+  position: relative;
+  padding-top: 130px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 0 200px;
+}
+
+.footer-text {
+  color: white;
+}
+
+.icon {
+  color: white;
+  margin: 20px 10px;
+}
+
+/* -----------------
+ responsive layout 
+ -------------------- */
+/* responsive for tablet  */
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .for-responsive {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-}
-.aside-btn{
-    width: 252px;
+  }
+  .headar-section {
+    width: 734px;
+    height: 398px;
+  }
+  .header-info {
+    width: 316px;
+    height: 276px;
+  }
+  .header-title {
+    font-size: 15px;
+  }
+  .header-btn {
+    padding: 6px 10px;
+  }
+  .header-img > img {
+    width: 323px;
+    height: 419px;
+  }
+  .cards-section {
+    grid-template-columns: 1fr;
+  }
+  .right-aside {
+    grid-template-columns: 1fr 1fr;
+  }
+  .left-aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 150px;
+    background-color: white;
+  }
+  .aside-btn {
+    width: 180px;
     height: 64px;
-    margin: 30px;
-    font-weight: 500px;
-    font-size: 20px;
-    line-height: 30px;
-    border-radius: 10px;
-    border: 1px solid #E8E8E8;
-    background-color: #FFFFFF;
-   
+    margin: 20px;
+    padding: 0;
+  }
+  .tab-view-btn {
+    /* visibility: visible; */
+    display: block;
+  }
+  footer {
+    margin-top: 20px;
+  }
+  .footer-section {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .footer-text {
+    margin: 10px;
+  }
 }
-.aside-btn > a{
-    text-decoration: none;
-    color: black;
-}
-.red {
-    background-color: red;
-}
-.red > a {
-    color: white;
-}
-.right-aside{
 
-}
-/* -------------
-all cards style 
- ---------------*/
- .right-aside{
-    width: 312px;
-    margin-left: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
- }
- .card{
-    border: 1px solid #E8E8E8;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px black;
- }
-.card > img{
-    width: 312px;
-    height: 175px;
-
- }
- .card-btn{
-    width: 100px;
-    height: 32px;
-    margin: 10px 10px;
-    color: black;
-    font-size: 18px;
-    border: 1px solid #E8E8E8;
-    border-radius: 10px;
- }
- .card-title{
-    margin-left: 10px;
- }
- .card-logo{
-    display: flex;
-    align-items: center;
-    
- }
- .card-text{
-    margin-left: 10px;
- }
- .card-logo > img{
-    height: 18px;
-    width: 18px;
-    margin-left: 10px;
-    
- }
- /* ----------------
- footer style
- ------------------- */
- footer{
-    width: 100%;
-    height: 444px;
-    background-color: black;
+/* responsive for mobile  */
+@media only screen and (max-width: 576px) {
+  .cards-section,
+  .right-aside,
+  .header,
+  .footer-section {
+    grid-template-columns: 1fr;
+  }
+  .left-aside {
+    background-color: white;
+  }
+  .headar-section {
+    width: 334px;
+    height: 472px;
     text-align: center;
+    padding: 10px;
     border-radius: 10px;
- }
- h2{
-    font-size: 40px;
-    line-height: 60px;
-    color: white;
-    position: relative;
-    padding-top: 130px;
- }
- .footer-section{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    justify-content: center;
-    align-items: center;
-    margin: 0  200px;
- }
- .footer-text{
-    color: white;
- }
- .icon{
-    color: white;
-    margin: 20px 10px;
- }
- /* -----------------
- responsive layout 
- -------------------- */
- @media only  screen and (max-width: 576px) {
-     .cards-section, .right-aside, .header,.footer-section{
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-       
-        
-     }
-     .left-aside{
-        background-color: white;
-     }
-     .headar-section{
-        width: 334px;
-        height: 472px;
-        text-align: center;
-        padding: 10px;
-        border-radius: 10px;
-     }
-     .header-info{
-        width: 258px;
-        height: 178px;
-     }
-     .header-title{
-        font-size: 20px;
-     }
-     .header-btn{
-        padding: 8px 12px;
-     }
-     .header-img > img{
-        width: 233px;
-        height: 245px;
-     }
-     .footer-text{
-        width: 200px;
-        margin-bottom: 20px;
-     }
-     h2{
-        padding: 0;
-     }
- }
- 
- 
+  }
+  .header-info {
+    width: 258px;
+    height: 178px;
+  }
+  .header-title {
+    font-size: 20px;
+  }
+  .header-btn {
+    padding: 8px 12px;
+  }
+  .header-img > img {
+    width: 233px;
+    height: 245px;
+  }
+  footer {
+    width: 375px;
+  }
+  .footer-text {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    padding: 0;
+  }
+}
