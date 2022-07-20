@@ -10,20 +10,35 @@ main{
 /* ------------
 header style 
 --------------- */
-.headar{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+.headar-section{
     margin-top: 20px;
-    width: 1321px;
-    height: 646px;
+    width: 1300px;
+    height: 633px;
     padding: 20px;
     background-color: black;
     border-radius: 30px;
     color: white;
 }
+.header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+
+}
+ /*.headar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    /* margin-top: 20px;
+    width: 1321px;
+    height: 633px;
+    padding: 20px;
+    background-color: black; */
+    /* border-radius: 30px;
+    color: white;
+}*/
 .header-info{
     width: 100%;
     padding: 20px;
@@ -38,14 +53,14 @@ header style
     color: #FFFFFF;
     font-weight: 400;
     font-size: 20px;
+    border: none;
     border-radius: 5px;
 }
+
 .header-img img{
-    position: absolute;
-    top: 93px;
-    Width: 581px;
-    Height: 613px;
-    margin-left: 30px;
+    width: 100%;
+    Height: 653px;
+    padding-left: 30px;
 }
 
 /*-------------------------
@@ -59,7 +74,6 @@ header style
 }
 .left-aside{
     background-color: #161616;
-;
     height: 312px;
     display: flex;
     flex-direction: column;
@@ -75,7 +89,7 @@ header style
     font-size: 20px;
     line-height: 30px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #E8E8E8;
     background-color: #FFFFFF;
    
 }
@@ -146,6 +160,7 @@ all cards style
     height: 444px;
     background-color: black;
     text-align: center;
+    border-radius: 10px;
  }
  h2{
     font-size: 40px;
@@ -155,22 +170,62 @@ all cards style
     padding-top: 130px;
  }
  .footer-section{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     justify-content: center;
     align-items: center;
-
+    margin: 0  200px;
  }
  .footer-text{
     color: white;
-    margin-left: 20px;
  }
  .icon{
     color: white;
-    margin: 10px;
-    padding: 10px;
-    width: 15px;
-    height: 15px;
+    margin: 20px 10px;
  }
-
+ /* -----------------
+ responsive layout 
+ -------------------- */
+ @media only  screen and (max-width: 576px) {
+     .cards-section, .right-aside, .header,.footer-section{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+       
+        
+     }
+     .left-aside{
+        background-color: white;
+     }
+     .headar-section{
+        width: 334px;
+        height: 472px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+     }
+     .header-info{
+        width: 258px;
+        height: 178px;
+     }
+     .header-title{
+        font-size: 20px;
+     }
+     .header-btn{
+        padding: 8px 12px;
+     }
+     .header-img > img{
+        width: 233px;
+        height: 245px;
+     }
+     .icon{
+        margin: 0;
+        padding: 0;
+        color: red;
+     }
+     h2{
+        padding: 0;
+     }
+ }
+ 
  
